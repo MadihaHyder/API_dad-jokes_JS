@@ -1,0 +1,23 @@
+@import "./variables";
+@mixin btn-style {
+    background-color: map-get($background-color , bg3 );
+    color: map-get($color , txtcolor );
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+@mixin h3-style {
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}  
+@mixin joke-style {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width:  map-get($width , $width3 );
+}

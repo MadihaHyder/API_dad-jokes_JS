@@ -1,0 +1,27 @@
+$width:(
+    "width1":800px,
+);
+$max-width:( 
+    "width2":100%,
+    "width3":600px,
+);
+$height:(
+    "height1":100hv,
+    "height2":80px,
+);
+$background-color:(
+    "bg1": #686de0,
+    "bg2":#fff,
+    "bg3": #9f68e0,
+);
+$color:(
+    "txtcolor": white,
+);
+$padding:(
+    "allsides": 20px,
+   
+);
+*{margin: 0px; padding: 0;}
+* {
+    box-sizing: border-box;
+  }

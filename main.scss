@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./mixin";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+body {
+  background-color: map-get($background-color , bg1 );
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: map-get($height , height1 );
+  overflow: hidden;
+  margin: 0;
+  padding: map-get($padding , allsides );
+}
+
+.container {
+  background-color: map-get($background-color , bg2 );
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width:  map-get($width , $width2 );
+  width: map-get($width , $width1 );
+}
+
+h3 {
+  @include h3-style;
+}
+
+.joke {
+  @include joke-style;
+}
+
+.btn {
+  @include btn-style;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
